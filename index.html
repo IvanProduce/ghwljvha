@@ -1,0 +1,120 @@
+<html>
+ <head>
+  <title> Clue 2 </title>
+ </head>
+   <body>
+<div class="marquee-container">
+  <div class="marquee">From the first we've strayed, to the second we've come,
+Yet the journey's not done, for there's still a hum.
+In this sequence we've tread, what's next in the spree?
+Hinting of progression, what do you foresee?</div>
+</div>
+<!-- Button code -->
+<div class="button-container">
+  <a href="https://ivanproduce.github.io/sjdfhoiwetho/" class="button" target="_blank">Three</a>
+</div>
+
+<!-- New buttons below the marquee text -->
+<div class="new-buttons-container">
+  <a href="https://www.youtube.com/watch?v=C26N__sYjs4" class="new-button" target="_blank">Four</a>
+  <a href="https://www.youtube.com/watch?v=kF5OleYO20k" class="new-button" target="_blank">Two</a>
+  <a href="https://www.youtube.com/watch?v=Qtl6SCKPSXk" class="new-button" target="_blank">Seven</a>
+</div>
+
+<style>
+  .marquee-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Background color of the scrolling area */
+    padding: 10px;
+    z-index: 999; /* Ensure it stays on top */
+  }
+  
+  .marquee {
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: black;
+    animation: marquee-scroll 30s linear infinite;
+    font-family: Monaco, monospace; /* Set font to Monaco */
+  }
+
+  .marquee:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight color on hover */
+  }
+  
+  @keyframes marquee-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .button-container {
+    position: fixed;
+    top: calc(100% - 50px); /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 999; /* Ensure it stays on top */
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    position: relative; /* Added position relative */
+    z-index: 1; /* Ensure it's above the grey box */
+    font-family: Monaco, monospace; /* Set font to Monaco */
+  }
+
+  .button:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey box color */
+    z-index: -1; /* Ensure it's behind the button */
+  }
+
+  .button:hover {
+    color: black; /* Change text color on hover */
+  }
+
+  /* New button styles */
+  .new-buttons-container {
+    margin-top: 70px; /* Space between marquee container and new buttons */
+    text-align: center;
+  }
+
+  .new-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    margin: 5px; /* Space between buttons */
+    font-family: Monaco, monospace; /* Set font to Monaco */
+  }
+
+  .new-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+  }
+
+  body {
+    font-family: Monaco, monospace; /* Set font to Monaco for all text */
+  }
+</style>
+</body>
+</html>
